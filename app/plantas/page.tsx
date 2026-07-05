@@ -9,7 +9,7 @@ type Planta = {
   foto_principal_url: string | null;
   criada_em: string | null;
 };
-
+export const dynamic = "force-dynamic";
 export default async function PlantasPage() {
   const { data: plantas } = await supabase
     .from("plantas")

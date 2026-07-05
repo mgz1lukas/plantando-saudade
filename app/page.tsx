@@ -8,7 +8,7 @@ type Planta = {
   categoria: string | null;
   criada_em: string | null;
 };
-
+export const dynamic = "force-dynamic";
 export default async function Home() {
   const { data: plantas } = await supabase
     .from("plantas")
